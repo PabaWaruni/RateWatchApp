@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3EEFA"
+    android:padding="20dp"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".CommercialAboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/com_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="#D3EEFA"
+        android:backgroundTint="#FDFDFD"
+        android:src="@drawable/commercial_bank_logo"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/com_logo"
+        android:layout_marginTop="190dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sam_logo"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/video_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="false"
+                app:videoId="QN96J275pOw" />
+
+            <TextView
+                android:id="@+id/aboutDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#D3EEFA"
+                android:backgroundTint="#FDFDFD"
+                android:padding="30dp"
+                android:text="Commercial Bank of Ceylon PLC (CBC) also known as ComBank is a licensed commercial bank in Sri Lanka and its ownership is private. It was incorporated as a public limited company and it is listed on the Colombo Stock Exchange. It is regarded as the largest private bank in Sri Lanka in terms of net worth and capital.[2] The bank is currently the third largest bank in Sri Lanka in terms of total net assets and it lies behind only Bank of Ceylon and People's Bank (both are state commercial banks). It is also the only private sector licensed bank in Sri Lanka to be designated as the higher-tier domestic systemically important bank according to the Central Bank of Sri Lanka.[3] The bank currently operates a network of 268 branches and around 932 ATM machines across Sri Lanka.\n\n
+        It became the first Sri Lankan bank to be listed in among the top 1000 banks in the world according to The Banker when it achieved the feat for the first time in 2008. Commercial Bank has also been ranked among the top 1000 banks in the world for nearly 11 successive years from 2008 to 2021.\n\n
+        It is considered as one of the most systemically important banks in Sri Lanka. It is the largest lender to Sri Lanka's Small and Medium Enterprise sector.[7] The Ministry of Finance of Sri Lanka revealed that the Commercial Bank of Ceylon was the biggest lender to SME sector for the year 2020 amounting to an estimated amount of 21.6 billion rupees which was 15% more than the second biggest lender to SME"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

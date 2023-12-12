@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "56379627693",
+    "firebase_url": "https://bank-app-1-default-rtdb.firebaseio.com",
+    "project_id": "bank-app-1",
+    "storage_bucket": "bank-app-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56379627693:android:2072ddd023e2e179530e24",
+        "android_client_info": {
+          "package_name": "com.pabawaruni.bank_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56379627693-foou4cf7i3tj0gf38ngl99upu90lbb4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAhJCF2vUybW2mSH8kirmeqNb4fxvHIiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56379627693-foou4cf7i3tj0gf38ngl99upu90lbb4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

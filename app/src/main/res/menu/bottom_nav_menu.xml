@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/banks"
+        android:title="Banks"
+        android:icon="@drawable/baseline_banks"/>
+
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_profile"/>
+
+    <item
+        android:id="@+id/QR"
+        android:icon="@drawable/qr_code_scanner"
+        android:title="QR Scanner" />
+
+
+</menu>

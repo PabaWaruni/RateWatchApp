@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0F0"
+    android:backgroundTint="#FECB00"
+    android:backgroundTintMode="src_atop"
+    android:padding="10dp"
+    tools:context=".BocFixedDepositsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textId1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4EEEE"
+        android:backgroundTint="#FFFFBC"
+        android:elegantTextHeight="true"
+        android:padding="20dp"
+        android:text="Fixed Deposits"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:padding="20dp"
+                android:text="Our Fixed Deposit allows you to deposit your money securely for a set period of time to earn higher returns on your savings."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFF75"
+                android:paddingHorizontal="25dp"
+                android:text="Benefits : "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textId1"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFF75"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:text="\t\t*.Payment of Interest - Please refer to Rates and Tariff
+\n\t\t*.Interest payable at maturity for all types
+\n\t\t*.Monthly interest on deposits of one year and above
+\n\t\t*.Fixed deposits will be accepted as a security for loans, guarantees etc.
+\n\t\t*.Nomination – a person/persons can be nominated to disburse the balance at the death of the fixed deposit account holder"
+                android:typeface="sans"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:paddingHorizontal="25dp"
+                android:text="Eligibility: "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:padding="10dp"
+                android:text="\t\t\t *.Sri Lankans over 18 years of age are eligible to open an account
+            \n\t\t\t *.Minimum deposit Rs. 10,000/-
+            \n\t\t\t *.Period – one, three, six months and one to five years (conditions apply for one-month deposits) "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFF75"
+                android:paddingHorizontal="25dp"
+                android:text="Fixed Deposits Rates"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/sam_fixed"
+                android:id="@+id/imgBocRates"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:elevation="30dp"
+                android:focusableInTouchMode="true"/>
+
+            <Button
+                android:id="@+id/btnDetails1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="#5FE809"
+                android:text="More Details"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom = "true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/baseline_cal"
+        app:backgroundTint="#BABAB7"
+        android:elevation="20dp" />
+
+</RelativeLayout>

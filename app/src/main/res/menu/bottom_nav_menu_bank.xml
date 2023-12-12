@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/baseline_format_align_justify_24"
+        android:title="About us" />
+
+    <item android:id="@+id/rate"
+        android:title="Fixed Rates"
+        android:icon="@drawable/baseline_data_exploration_24"/>
+
+    <item android:id="@+id/map"
+        android:title="Find Branches"
+        android:icon="@drawable/baseline_map_24"/>
+
+</menu>

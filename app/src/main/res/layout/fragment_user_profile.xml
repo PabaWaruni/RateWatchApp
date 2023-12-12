@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BanksFragment"
+    android:padding="10dp">
+
+
+
+    <ImageView
+        android:id="@+id/etUserimg"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/user"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"/>
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/etUserimg"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="User Name :"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/txtUserName"
+        android:layout_margin="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Email :"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="135dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Mobile No. :"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/etUSERname"
+        android:layout_width="214dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:layout="@+id/txtUserName"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignRight="@+id/txtUserName"
+        android:layout_marginTop="80pt"/>
+
+    <EditText
+        android:id="@+id/etemailAddress"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:layout_below="@+id/etUSERname"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/txtEmail"
+        android:layout_marginTop="26pt"/>
+
+    <EditText
+        android:id="@+id/etmobilephone"
+        android:layout_width="214dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:layout_below="@+id/etemailAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignRight="@+id/txtMobile"
+        android:layout_marginTop="26pt"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#082777"
+        android:text="Save  Account"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="45dp"
+        android:backgroundTint="#082777"
+        android:text="Delete  Account"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

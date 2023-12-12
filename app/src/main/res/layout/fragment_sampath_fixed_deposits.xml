@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0F0"
+    android:backgroundTint="#FFA403"
+    android:backgroundTintMode="src_atop"
+    android:padding="10dp"
+    tools:context=".SampathFixedDepositsFragment">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textId1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4EEEE"
+        android:backgroundTint="#FAD293"
+        android:elegantTextHeight="true"
+        android:padding="20dp"
+        android:text="Fixed Deposits"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/image1"
+                android:scaleType="fitStart"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFF1D9"
+                android:paddingHorizontal="25dp"
+                android:text="What is it?"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textId1"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFF1D9"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:text="Sampath Fixed Deposits can help you to fulfill your dream of a financially-secure future for yourself and your family. You can earn a high interest for your hard-earned money and have peace of mind, by seeing your wealth accumulate at an amazing speed while being in the safe custody of one of the leading banks in Sri Lanka.  You do not need to be a Sampath Bank account holder to enjoy high interest rates and earn an additional income on your fixed deposit. A minimum deposit of Rs. 25,000/- is all what you need to open a fixed deposit account. If you are a Sampath Bank account holder, then the interest earned, whether monthly or annually, can be automatically transferred to your Current or Savings account according to your wishes."
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:paddingHorizontal="25dp"
+                android:text="Eligibility: "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:padding="10dp"
+                android:text="\t\t\t *.Sri Lankan citizen over 18 years of age
+            \n\t\t\t *.Valid identification document (National Identity Card (NIC), Passport)
+            \n\t\t\t *.Minimum initial deposit - Rs. 25,000/- "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFF1D9"
+                android:paddingHorizontal="25dp"
+                android:text="Fixed Deposits Rates"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/sam_fixed"
+                android:id="@+id/imgSampathRates"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:elevation="30dp"
+                android:focusableInTouchMode="true"/>
+
+            <Button
+                android:id="@+id/btnDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#5FE809"
+                android:text="More Details"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_margin="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom = "true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/baseline_cal"
+        app:backgroundTint="#BABAB7"
+        android:elevation="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#BFFFE456"
+    android:padding="20dp"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".BocAboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/boc_logo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="4dp"
+        android:background="#FFD180"
+        android:backgroundTint="#F3EBEB"
+        android:src="@drawable/boc_logo_1"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/boc_logo"
+        android:layout_marginTop="160dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/boc_logo"
+            android:orientation="vertical">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:id="@+id/video_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:autoPlay="false"
+                app:videoId="kZPJv1Cy8WA"
+                />
+
+            <TextView
+                android:id="@+id/aboutDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#B1AEAE"
+                android:backgroundTint="#F3EBEB"
+                android:padding="30dp"
+                android:text="Bank of Ceylon (BOC; Sinhala: ලංකා බැංකුව Lanka Bænkuwa|Tamil: இலங்கை வங்கி Ilangai Vangi) is a state-owned, major commercial bank in Sri Lanka. Its head office is located in an iconic cylindrical building in Colombo.
+\n\nThe bank has a network of 651 branches, 715 automated teller machines (ATMs), 159 CDM, 582 CRM network, and 15 regional loan centres within the country. It also has an around-the-clock call centre and an around the clock branch at its Colombo office.
+\n\nIn addition to the local presence, the bank maintains an off-shore banking unit in the head office in Colombo, three branches in Malé, Chennai, and Seychelles, and a subsidiary in London."
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

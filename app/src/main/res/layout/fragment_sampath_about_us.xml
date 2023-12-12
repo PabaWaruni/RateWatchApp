@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FADAA2"
+    android:padding="20dp"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".SampathAboutUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/sam_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#FADAA2"
+        android:backgroundTint="#FDFDFD"
+        android:padding="20dp"
+        android:src="@drawable/sampath_bank_logo"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sam_logo"
+        android:layout_marginTop="180dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sam_logo"
+        android:orientation="vertical">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:id="@+id/video_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:videoId="Xmz-wn9Ywe8"
+            />
+
+        <TextView
+            android:id="@+id/aboutDescription1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FADAA2"
+            android:backgroundTint="#FDFDFD"
+            android:padding="30dp"
+            android:text="Sampath Bank PLC (Sinhala: සම්පත් බැංකුව, romanized: sampat bæṁkuva) is a licensed commercial bank incorporated in Sri Lanka in 1987 with 229 branches and 373 ATMs island-wide. It has won the 'Bank of the Year'award by 'The Banker' of Financial Times Limited – London, for the second consecutive year and the 'National Business Excellence Awards 2010'.[citation needed] It has become the third largest private sector bank in Sri Lanka with Rs. 453 billion in deposits as of 30 June 2016."
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

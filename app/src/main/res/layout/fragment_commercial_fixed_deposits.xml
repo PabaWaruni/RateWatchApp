@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0F0"
+    android:backgroundTint="#006EB8"
+    android:backgroundTintMode="src_atop"
+    android:padding="10dp"
+    tools:context=".CommercialFixedDepositsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textId1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4EEEE"
+        android:backgroundTint="#BBD4FD"
+        android:elegantTextHeight="true"
+        android:padding="20dp"
+        android:text="Fixed Deposits"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="25dp"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/image1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:padding="20dp"
+                android:text="We offer you a range of deposit products to suit your requirement. With attractive interest rates on offer, you can watch you money grow day by day."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#95A2E6"
+                android:paddingHorizontal="25dp"
+                android:text="Highlights : "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/editTextTextMultiLine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textId1"
+                android:background="#F4D08F"
+                android:backgroundTint="#95A2E6"
+                android:ems="20"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:text="\t\t*.Start saving today with a minimum of Rs. 500,000/-.
+\n\t\t*.Flexible deposit periods for you to select.
+\n\t\t*.Earn a higher rate of interest than normal fixed deposits."
+                android:textStyle="normal"
+                android:typeface="sans"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:paddingHorizontal="25dp"
+                android:text="Features : "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:padding="10dp"
+                android:text="\t\t\t *.You can open a Fixed Deposit for 100 days.
+\n\t\t\t *.Minimum Deposit would be Rs. 500,000/-.
+\n\t\t\t *.Interest will be paid only at maturity."
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:paddingHorizontal="25dp"
+                android:text="Eligibility: "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4D08F"
+                android:backgroundTint="#FFFFFF"
+                android:padding="10dp"
+                android:text="\t\t\t *.Personal and non-personal customers, subject to prevailing Bank / Central Bank guidelines. "
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#F4D08F"
+                android:backgroundTint="#95A2E6"
+                android:paddingHorizontal="25dp"
+                android:text="Fixed Deposits Rates"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/sam_fixed"
+                android:id="@+id/imgCommercialRates"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:elevation="30dp"
+                android:focusableInTouchMode="true"/>
+
+            <Button
+                android:id="@+id/btnDetails1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="#5FE809"
+                android:text="More Details"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom = "true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/baseline_cal"
+        app:backgroundTint="#BABAB7"
+        android:elevation="20dp" />
+</RelativeLayout>
